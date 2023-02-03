@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+        <title>Rozetka test task</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="Demo Project">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+        <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+        
+                
+        <style type="text/css">
+
+            body {
+                font-family: 'SF Pro Display', sans-serif;
+                max-width: 1200px;
+                margin: 0 auto;
+                color: #000000;
+                font-size: 25px;
+                text-align: center;
+                background: #FFFFFF;
+            }
+
+            .top {
+                margin: 113px 73px 0;
+            }
+
+            h1 { 
+                font-size: 72px;
+                padding: 10px 0 20px;
+                margin: 45px 0;
+            }
+
+            h2 { 
+                font-size: 72px;
+                padding: 10px;
+                margin: 10px 0;
+            }
+
+            h3 {
+                    font-size: 40px;
+                }
+
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                width: auto;
+                height: auto;
+            }
+
+            .function {
+                padding-top: 80px;
+            }
+            
+            .function-img {
+                display: flex;
+                margin-top: 120px;
+            }
+
+            .protection {
+                margin-top: 140px;
+            }
+
+            .productivity-detail {
+                display: grid;
+                gap: 10px;
+            }
+            
+            .detail-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .detail-right {
+                position: relative;
+            }
+
+            .detail-right img {
+                float: right;
+            }
+
+            .detail-right-ttl {
+                position: absolute;
+                top: 25px;
+                left: 80px;
+            }
+            .grayed-out {
+                background-color: #F7F7F7;
+            }
+            
+            .allotment {
+                font-size: 95px;
+                color: #00a800;
+            }
+
+            .characteristics {
+                margin-top: 100px;
+            }
+
+            .characteristics__list {
+                
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                padding: 0 92px;
+                text-align: left;
+            }
+
+            .characteristics__list-left,
+            .characteristics__list-right {
+                    margin: 0 45px;
+                }
+
+            .characteristics__item {
+                line-height: 1.2;
+                font-family: 'Myriad Pro', sans-serif;
+                padding: 40px 0;
+            }
+
+            span {
+                position: relative;  
+            }
+
+            .emphasis::after {
+                position: absolute;
+                content: "";
+                display: block;
+                width: 144px;
+                height: 2px;
+                background: #131313;
+                border: 0px solid #000000;
+                margin: 46px 0 46px;
+            }
+            
+            .accessories {
+                display: flex;
+                margin-top: 146px;
+                gap: 10px;
+            }
+
+            .productivity {
+                margin-top: 100px;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .accessories-box1 {
+                width: 60%;
+            }
+
+            .accessories-box2 {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .smallaccessories1 {
+                margin-bottom: 10px;
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    font-size: 35px;
+                }
+
+                .top {
+                    margin: 50px 20px;
+                }
+
+                h1, h2 {
+                    font-size: 36px;
+                    padding: 30px 20px;
+                }
+
+                .function {
+                padding-top: 10px;
+                }
+
+                .function-img {
+                    margin-top: 70px;
+                }
+
+                .protection {
+                    margin-top: 90px;
+                }
+
+                .productivity {
+                    margin-top: 70px;
+                }
+
+                h3 {
+                    font-size: 25px;
+                }
+
+                .characteristics {
+                    margin-top: 60px;
+                }
+
+                .characteristics__list {
+                    padding: 0 40px;
+                }
+
+                .characteristics__list-left,
+                .characteristics__list-right {
+                    margin: 0 15px;
+                }
+
+                .characteristics__item {
+                    font-size: 20px;
+                }
+
+                .accessories {
+                    margin-top: 65px;
+                }
+              
+            }
+            
+            @media (max-width: 576px) {
+                body {
+                    font-size: 18px;
+                }
+
+                .top {
+                    margin: 15px 20px;
+                }
+
+                h1, h2 { 
+                    font-size: 25px;
+                    padding: 10px 10px;
+                }
+
+                .protection {
+                    margin-top: 70px;
+                }
+
+                .detail-left img {
+                    padding-top: 20px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                }
+
+                .allotment {
+                    font-size: 50px;
+                }
+
+                .characteristics__list {
+                    grid-template-columns: 1fr;
+                    padding: 0 20px;
+                }
+
+                .characteristics__item {
+                        padding: 20px 0 10px;
+                    }
+
+                .emphasis::after {
+                    margin: 10px 0 10px;
+                }
+                
+                .accessories {
+                    flex-wrap: wrap;
+                }
+
+                .accessories-box1,
+                .accessories-box2 {
+                    width: 100%;
+                }
+
+                .productivity {
+                    grid-template-columns: none;
+                }
+                .smallaccessories1 {
+                    display: flex;
+                    flex-direction: column;
+                    padding-bottom: 20px;
+                }
+            }
+        </style>
+
+    </head>
+
+    <body>
+        <section class="top">
+            <img src="img/logo.png" alt="logo">
+            <h1>Можна закохатися.<br>
+                З багатьох причин.
+            </h1>
+            <img src="img/watch_1.jpg" alt="photo-watch">
+        </section>
+       
+        <section class="function">
+            <h2>Основні функції для підтримання здоров'я, безпеки й активного способу життя.</h2>
+            <div class="function-img grayed-out">
+                <img src="img/watch_2.png" alt="types of watches">
+            </div> 
+        </section>
+
+        <section class="protection">
+            <h2>Захист від води.</h2>
+            <img src="img/watch_3.jpg" alt="photo protection against water">
+        </section>
+
+        <section  class="productivity">
+            <div class="productivity-detail">
+                <div class="detail-left grayed-out">
+                    <img src="img/sleep.png" alt="types of watches">
+                    <h3>Відстежуйте <br>фази сну</h3>    
+                </div>
+                <div class="detail-left grayed-out">
+                    <img src="img/sos.png" alt="types of watches">
+                    <h3>Функції <br>«Виявлення аварій» <br>і «Виявлення падіння»</h3>  
+                </div>
+            </div> 
+         
+            <div class="productivity-detail">
+                <div class="detail-right grayed-out">
+                    <h3 class="detail-right-ttl">Задня панель <br> відповідного <br>кольору</h3>
+                    <img src="img/watch_4.jpg" alt="types of watches">
+                </div>
+                <div class="detail-right grayed-out">
+                    <h3><span class="allotment">На 20%</span> <br>вища продуктивність</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="characteristics">
+            <h2>Основні характеристики</h2>
+            <div class="characteristics__list">
+                
+                <div class="characteristics__list-left">
+                    <div class="characteristics__item">
+                        <span class="emphasis">Відповідайте на дзвінки та повідомдення просто із зап'ястя</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span class="emphasis">До 20% швидший за попередній Apple Watch SE</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span class="emphasis">Розширені функції безпеки, зокрема Виявлення падіння, Сигнал SOS і Виявлення аварій</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span class="emphasis">Відстежуйте свою активність, протягом дгя з Apple Watch, а потім переглядайте тенденції в додатку «Фітнес» на IPhone</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span>Покращений додаток «Тренування» з удосконаленими підходами до вправ</span>
+                    </div>
+                </div>
+
+                <div class="characteristics__list-right">
+                    <div class="characteristics__item">
+                        <span class="emphasis">Отримуйте сповіщення про високий, низький і порушений серцевий ритм</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span class="emphasis">Слухайте улюблену музику, подкасти й аудіокниги (для використання в моделях GPS)</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span class="emphasis">Захист від води</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span class="emphasis">Відстеження сну дає змогу дізнатися, скільки часу ви перебували у фазах швидкого, повільного та глибого сну</span>
+                    </div>
+                    <div class="characteristics__item">
+                        <span>watchOS 9 підтримує покращений додаток «Тренування», новий додаток краще відстежує ритм серця</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="accessories">
+            <div class="accessories-box1 grayed-out">
+                <h2>Що в комплекті</h2>
+                <img src="img/watch_5.png" alt="types of watches">
+            </div>
+            <div class="accessories-box2">
+                <div  class="smallaccessories1 grayed-out">
+                    <h3>Спортивний ремінець</h3>
+                    <img src="img/belt.jpg" alt="types of accessories">
+                </div>
+                <div class="smallaccessories2 grayed-out">
+                    <h3>Кабель USB-C <br>з магнітним кріпленням <br>для заряджання</h3>
+                    <img src="img/usbc.jpg" alt="types of accessories">
+                </div>    
+            </div>
+        </section>
+     
+    </body>
+  </html>
+
+  
